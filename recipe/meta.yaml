@@ -67,6 +67,8 @@ test:
     # Run git commands.
     - git --version
     - git clone https://github.com/conda-forge/git-feedstock
+    - cd git-feedstock
+    - git log
 
     # Git credential commands
     - git-credential-osxkeychain 2>&1 | grep -q usage  # [osx]
